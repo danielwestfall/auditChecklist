@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WCAG 2.2 Guideline 1.4 Checklist (Beginner)</title>
+    <style>
+      .checklist {
+        font-family: sans-serif;
+      }
+      .checklist-item {
+        margin-bottom: 25px;
+      }
+      textarea {
+        width: 95%;
+        height: 100px;
+      }
+      .sc-description {
+        font-style: italic;
+        margin-bottom: 10px;
+        color: #555;
+      }
+      .check-details {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WCAG 2.2 Guideline 1.4 Checklist (Beginner)</h1>
+    <div class="checklist">
+      <div class="checklist-item">
+        <input type="checkbox" id="use-of-color" />
+        <label for="use-of-color"
+          ><strong>1.4.1 Use of Color:</strong> Don't use color alone to convey
+          information.</label
+        ><br />
+        <div class="sc-description">
+          This means that if you're using color to show something important, you
+          need to also use another way to show it, like text or symbols.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Instructions:</strong> Are there instructions that rely
+              only on color (e.g., "Click the green button")?
+            </li>
+            <li>
+              <strong>Errors:</strong> Are errors indicated only by color (e.g.,
+              red text)?
+            </li>
+            <li>
+              <strong>Links:</strong> Are links only distinguished by color?
+            </li>
+            <li>
+              <strong>Alternatives:</strong> Are there other visual cues, like
+              text labels, patterns, or underlining?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-use-of-color" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="audio-control" />
+        <label for="audio-control"
+          ><strong>1.4.2 Audio Control:</strong> Make sure users can control any
+          background audio.</label
+        ><br />
+        <div class="sc-description">
+          If your website has background music or sounds, people should be able
+          to easily turn it off or adjust the volume.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Controls:</strong> Are there clear controls to pause,
+              stop, or adjust the volume of the audio?
+            </li>
+            <li>
+              <strong>Automatic audio:</strong> Does any audio start playing
+              automatically?
+            </li>
+            <li>
+              <strong>Looping audio:</strong> Does any audio loop continuously?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-audio-control" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="contrast-minimum" />
+        <label for="contrast-minimum"
+          ><strong>1.4.3 Contrast (Minimum):</strong> Make sure text has enough
+          contrast with its background.</label
+        ><br />
+        <div class="sc-description">
+          This means the color of the text and the background should be
+          different enough so people with low vision can read it.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Use a contrast checker:</strong> Search for "WCAG contrast
+              checker" online. Enter the text and background colors to see if
+              they pass.
+            </li>
+            <li>
+              <strong>Text size:</strong> Smaller text needs more contrast.
+            </li>
+            <li>
+              <strong>Exceptions:</strong> Logos and inactive elements might be
+              exempt.
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-contrast-minimum" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="resize-text-aa" />
+        <label for="resize-text-aa"
+          ><strong>1.4.4 Resize text (AA):</strong> Make sure text can be made
+          bigger without losing information.</label
+        ><br />
+        <div class="sc-description">
+          People should be able to make the text bigger in their browser without
+          the text getting cut off or overlapping.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Zoom in:</strong> Use your browser's zoom feature (usually
+              Ctrl + or Cmd +) to zoom to 200%.
+            </li>
+            <li>
+              <strong>Check for overlap:</strong> Make sure no text or other
+              content overlaps or disappears.
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-resize-text-aa" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="images-of-text-aa" />
+        <label for="images-of-text-aa"
+          ><strong>1.4.5 Images of Text (AA):</strong> Use real text instead of
+          images of text when possible.</label
+        ><br />
+        <div class="sc-description">
+          Images of text can be harder to read for people with low vision or who
+          use screen readers.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Use text:</strong> If possible, use real text instead of
+              images of text.
+            </li>
+            <li>
+              <strong>Exceptions:</strong> Logos and situations where a specific
+              look is important might be okay.
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-images-of-text-aa" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="line-height" />
+        <label for="line-height"
+          ><strong>1.4.10 Reflow (AA):</strong> Content should be readable
+          without horizontal scrolling.</label
+        ><br />
+        <div class="sc-description">
+          When people make the text size bigger, they shouldn't have to scroll
+          left and right to read the lines.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Zoom and resize:</strong> Zoom in and make the browser
+              window narrower. Can you read the lines without scrolling
+              sideways?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-line-height" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="non-text-contrast" />
+        <label for="non-text-contrast"
+          ><strong>1.4.11 Non-text Contrast:</strong> Make sure visual elements
+          have enough contrast.</label
+        ><br />
+        <div class="sc-description">
+          This means things like buttons, icons, and graphics should have enough
+          contrast with their background so people can see them easily.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Contrast checker:</strong> Use a contrast checker tool to
+              test the contrast of visual elements.
+            </li>
+            <li>
+              <strong>User interface components:</strong> Check buttons, icons,
+              and other interface elements.
+            </li>
+            <li>
+              <strong>Graphics:</strong> Check important parts of graphics and
+              diagrams.
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-non-text-contrast" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="text-spacing" />
+        <label for="text-spacing"
+          ><strong>1.4.12 Text Spacing:</strong> Make sure text is
+          well-spaced.</label
+        ><br />
+        <div class="sc-description">
+          This means there should be enough space between letters, words, and
+          lines of text so it's easier to read.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Spacing:</strong> Is there enough space between letters,
+              words, and lines?
+            </li>
+            <li>
+              <strong>Overlapping:</strong> Does any text overlap when spacing
+              is increased?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-text-spacing" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="content-on-hover-or-focus" />
+        <label for="content-on-hover-or-focus"
+          ><strong>1.4.13 Content on Hover or Focus:</strong> Make sure extra
+          content that appears when you hover or focus is accessible.</label
+        ><br />
+        <div class="sc-description">
+          If something pops up when you hover over it with your mouse or tab to
+          it with your keyboard, it should be easy to use and dismiss.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Dismiss:</strong> Can you easily dismiss the extra
+              content?
+            </li>
+            <li>
+              <strong>Time limits:</strong> Does it disappear too quickly?
+            </li>
+            <li>
+              <strong>Keyboard traps:</strong> Can you tab out of the extra
+              content?
+            </li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-content-on-hover-or-focus"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
+    </div>
+
+    <script>
+      function getChecklistData() {
+        const notes = {
+          "use-of-color": {
+            notes: document.getElementById("notes-use-of-color").value,
+            applicable: document.getElementById("use-of-color").checked,
+          },
+          "audio-control": {
+            notes: document.getElementById("notes-audio-control").value,
+            applicable: document.getElementById("audio-control").checked,
+          },
+          "contrast-minimum": {
+            notes: document.getElementById("notes-contrast-minimum").value,
+            applicable: document.getElementById("contrast-minimum").checked,
+          },
+          "resize-text-aa": {
+            notes: document.getElementById("notes-resize-text-aa").value,
+            applicable: document.getElementById("resize-text-aa").checked,
+          },
+          "images-of-text-aa": {
+            notes: document.getElementById("notes-images-of-text-aa").value,
+            applicable: document.getElementById("images-of-text-aa").checked,
+          },
+          "line-height": {
+            notes: document.getElementById("notes-line-height").value,
+            applicable: document.getElementById("line-height").checked,
+          },
+          "non-text-contrast": {
+            notes: document.getElementById("notes-non-text-contrast").value,
+            applicable: document.getElementById("non-text-contrast").checked,
+          },
+          "text-spacing": {
+            notes: document.getElementById("notes-text-spacing").value,
+            applicable: document.getElementById("text-spacing").checked,
+          },
+          "content-on-hover-or-focus": {
+            notes: document.getElementById("notes-content-on-hover-or-focus")
+              .value,
+            applicable: document.getElementById("content-on-hover-or-focus")
+              .checked,
+          },
+          // ... (add other checklist items with their notes and applicable status)
+        };
+        return JSON.stringify(notes);
+      }
+    </script>
+  </body>
+</html>

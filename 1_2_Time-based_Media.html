@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WCAG 2.2 Guideline 1.2 Checklist (Beginner)</title>
+    <style>
+      .checklist {
+        font-family: sans-serif;
+      }
+      .checklist-item {
+        margin-bottom: 25px;
+      }
+      textarea {
+        width: 95%;
+        height: 100px;
+      }
+      .sc-description {
+        font-style: italic;
+        margin-bottom: 10px;
+        color: #555;
+      }
+      .check-details {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WCAG 2.2 Guideline 1.2 Checklist (Beginner)</h1>
+    <div class="checklist">
+      <div class="checklist-item">
+        <input type="checkbox" id="audio-only-live" />
+        <label for="audio-only-live"
+          ><strong>1.2.1 Audio-only and Video-only (Live):</strong> Provide
+          alternatives for live audio and video.</label
+        ><br />
+        <div class="sc-description">
+          For live audio or video, provide a text alternative explaining what's
+          happening.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Live audio:</strong> Provide a text transcript or
+              description of what's being said.
+            </li>
+            <li>
+              <strong>Live video:</strong> Provide a text description of what's
+              being shown.
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-audio-only-live" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="captions-prerecorded" />
+        <label for="captions-prerecorded"
+          ><strong>1.2.2 Captions (Prerecorded):</strong> Provide captions for
+          prerecorded videos with audio.</label
+        ><br />
+        <div class="sc-description">
+          Captions are text versions of the spoken words in a video, displayed
+          on the screen.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Captions:</strong> Are there accurate captions
+              synchronized with the audio?
+            </li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-captions-prerecorded"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="audio-description-prerecorded" />
+        <label for="audio-description-prerecorded"
+          ><strong
+            >1.2.3 Audio Description or Media Alternative (Prerecorded):</strong
+          >
+          Provide audio descriptions or media alternatives for prerecorded
+          videos.</label
+        ><br />
+        <div class="sc-description">
+          Audio descriptions explain important visual details that aren't in the
+          audio.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Audio descriptions:</strong> Are there audio descriptions
+              for important visual information?
+            </li>
+            <li>
+              <strong>Media alternative:</strong> If audio descriptions aren't
+              possible, is there a text or audio version that provides the same
+              information?
+            </li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-audio-description-prerecorded"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="captions-live" />
+        <label for="captions-live"
+          ><strong>1.2.4 Captions (Live):</strong> Provide captions for live
+          videos with audio.</label
+        ><br />
+        <div class="sc-description">
+          Provide real-time captions for live video content.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Live captions:</strong> Are there accurate, real-time
+              captions synchronized with the live audio?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-captions-live" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="audio-description-extended" />
+        <label for="audio-description-extended"
+          ><strong>1.2.5 Audio Description (Prerecorded):</strong> Provide
+          extended audio descriptions when needed.</label
+        ><br />
+        <div class="sc-description">
+          Use extended audio descriptions if there's not enough time in the
+          regular audio to describe all the important visuals.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Extended audio descriptions:</strong> If there are long
+              pauses in the audio, are extended audio descriptions used to
+              explain visuals?
+            </li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-audio-description-extended"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="sign-language-prerecorded" />
+        <label for="sign-language-prerecorded"
+          ><strong>1.2.6 Sign Language (Prerecorded):</strong> Provide sign
+          language interpretation for prerecorded videos with audio.</label
+        ><br />
+        <div class="sc-description">
+          Provide sign language interpretation for videos where spoken audio is
+          important.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Sign language:</strong> Is there a sign language version
+              of the video?
+            </li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-sign-language-prerecorded"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="audio-description-media-alternative" />
+        <label for="audio-description-media-alternative"
+          ><strong>1.2.7 Extended Audio Description (Prerecorded):</strong>
+          Provide an extended audio description or media alternative for
+          prerecorded video.</label
+        ><br />
+        <div class="sc-description">
+          If pauses in the audio are too short, provide a separate video with
+          extended audio descriptions, or a text alternative.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Extended audio description or media alternative:</strong>
+              If regular audio descriptions don't work, is there a separate
+              version or a text alternative?
+            </li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-audio-description-media-alternative"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="sign-language-live" />
+        <label for="sign-language-live"
+          ><strong>1.2.8 Sign Language (Live):</strong> Provide sign language
+          interpretation for live videos with audio.</label
+        ><br />
+        <div class="sc-description">
+          Provide real-time sign language interpretation for live video content.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Live sign language:</strong> Is there real-time sign
+              language interpretation available?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-sign-language-live" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="media-alternative-prerecorded" />
+        <label for="media-alternative-prerecorded"
+          ><strong>1.2.9 Audio-only Live (Prerecorded):</strong> Provide a media
+          alternative for audio-only prerecorded.</label
+        ><br />
+        <div class="sc-description">
+          Provide a media alternative for audio only content.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Transcript:</strong> Is there a transcript for all audio
+              content?
+            </li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-media-alternative-prerecorded"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
+    </div>
+
+    <script>
+      function getChecklistData() {
+        const notes = {
+          "audio-only-live": {
+            notes: document.getElementById("notes-audio-only-live").value,
+            applicable: document.getElementById("audio-only-live").checked,
+          },
+          "captions-prerecorded": {
+            notes: document.getElementById("notes-captions-prerecorded").value,
+            applicable: document.getElementById("captions-prerecorded").checked,
+          },
+          "audio-description-prerecorded": {
+            notes: document.getElementById(
+              "notes-audio-description-prerecorded"
+            ).value,
+            applicable: document.getElementById("audio-description-prerecorded")
+              .checked,
+          },
+          "captions-live": {
+            notes: document.getElementById("notes-captions-live").value,
+            applicable: document.getElementById("captions-live").checked,
+          },
+          "audio-description-extended": {
+            notes: document.getElementById("notes-audio-description-extended")
+              .value,
+            applicable: document.getElementById("audio-description-extended")
+              .checked,
+          },
+          "sign-language-prerecorded": {
+            notes: document.getElementById("notes-sign-language-prerecorded")
+              .value,
+            applicable: document.getElementById("sign-language-prerecorded")
+              .checked,
+          },
+          "audio-description-media-alternative": {
+            notes: document.getElementById(
+              "notes-audio-description-media-alternative"
+            ).value,
+            applicable: document.getElementById(
+              "audio-description-media-alternative"
+            ).checked,
+          },
+          "sign-language-live": {
+            notes: document.getElementById("notes-sign-language-live").value,
+            applicable: document.getElementById("sign-language-live").checked,
+          },
+          "media-alternative-prerecorded": {
+            notes: document.getElementById(
+              "notes-media-alternative-prerecorded"
+            ).value,
+            applicable: document.getElementById("media-alternative-prerecorded")
+              .checked,
+          },
+          // ... (add other checklist items with their notes and applicable status)
+        };
+        return JSON.stringify(notes);
+      }
+    </script>
+  </body>
+</html>

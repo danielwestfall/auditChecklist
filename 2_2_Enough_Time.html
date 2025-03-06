@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WCAG 2.2 Guideline 2.2 Checklist (Beginner)</title>
+    <style>
+      .checklist {
+        font-family: sans-serif;
+      }
+      .checklist-item {
+        margin-bottom: 25px;
+      }
+      textarea {
+        width: 95%;
+        height: 100px;
+      }
+      .sc-description {
+        font-style: italic;
+        margin-bottom: 10px;
+        color: #555;
+      }
+      .check-details {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WCAG 2.2 Guideline 2.2 Checklist (Beginner)</h1>
+    <div class="checklist">
+      <div class="checklist-item">
+        <input type="checkbox" id="timing-adjustable" />
+        <label for="timing-adjustable"
+          ><strong>2.2.1 Timing Adjustable:</strong> For each time limit that is
+          set by the content, at least one of the following is true:
+          <ul>
+            <li>
+              <strong>Turn off:</strong> The user can turn off the time limit
+              before they encounter it; or
+            </li>
+            <li>
+              <strong>Adjust:</strong> The user can adjust the time limit before
+              they encounter it over a wide range that is at least ten times the
+              length of the default setting; or
+            </li>
+            <li>
+              <strong>Extend:</strong> The user can extend the time limit before
+              it ends with a simple action (for example, "hit any key") without
+              losing data after the time limit is extended by at least 20
+              seconds; or
+            </li>
+            <li>
+              <strong>Real-time Exception:</strong> The time limit is a required
+              part of a real-time event (for example, an auction), and no
+              alternative to the time limit is possible; or
+            </li>
+            <li>
+              <strong>Essential Exception:</strong> The time limit is essential
+              and extending it would invalidate the activity; or
+            </li>
+            <li>
+              <strong>20 Hour Exception:</strong> The time limit is longer than
+              20 hours.
+            </li>
+          </ul> </label
+        ><br />
+        <div class="sc-description">
+          This means that if the website has time limits (like session
+          timeouts), you should be able to turn them off, adjust them, or get
+          more time.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Time limits:</strong> Are there any time limits on the
+              website?
+            </li>
+            <li>
+              <strong>Adjustments:</strong> Can you turn off the time limit,
+              adjust it, or extend it?
+            </li>
+            <li>
+              <strong>Exceptions:</strong> Does the time limit fit into any of
+              the exceptions (real-time event, essential, 20 hours)?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-timing-adjustable" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="pause-stop-hide" />
+        <label for="pause-stop-hide"
+          ><strong>2.2.2 Pause, Stop, Hide:</strong> For moving, blinking,
+          scrolling, or auto-updating information, all of the following are
+          true:
+          <ul>
+            <li>
+              <strong>Moving, blinking, scrolling:</strong> For any moving,
+              blinking or scrolling information that (1) starts automatically,
+              (2) lasts more than five seconds, and (3) is presented in parallel
+              with other content, there is a mechanism for the user to pause,
+              stop, or hide it unless the movement, blinking, or scrolling is
+              part of an activity where it is essential; and
+            </li>
+            <li>
+              <strong>Auto-updating:</strong> For any auto-updating information
+              that (1) starts automatically and (2) is presented in parallel
+              with other content, there is a mechanism for the user to pause,
+              stop, or hide it or to control the frequency of the update unless
+              the auto-updating is part of an activity where it is essential.
+            </li>
+          </ul> </label
+        ><br />
+        <div class="sc-description">
+          This means that if there are things moving or blinking on the website,
+          you should be able to pause them, stop them, or hide them.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Moving content:</strong> Is there any moving, blinking,
+              scrolling, or auto-updating content?
+            </li>
+            <li>
+              <strong>Controls:</strong> Can you pause, stop, or hide the
+              content?
+            </li>
+            <li>
+              <strong>Exceptions:</strong> Is the movement essential to an
+              activity?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-pause-stop-hide" placeholder="Notes:"></textarea>
+      </div>
+    </div>
+
+    <script>
+      function getChecklistData() {
+        const notes = {
+          "timing-adjustable": {
+            notes: document.getElementById("notes-timing-adjustable").value,
+            applicable: document.getElementById("timing-adjustable").checked,
+          },
+          "pause-stop-hide": {
+            notes: document.getElementById("notes-pause-stop-hide").value,
+            applicable: document.getElementById("pause-stop-hide").checked,
+          },
+          // ... (add other checklist items with their notes and applicable status)
+        };
+        return JSON.stringify(notes);
+      }
+    </script>
+  </body>
+</html>

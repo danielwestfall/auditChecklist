@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WCAG 2.2 Guideline 1.3 Checklist (Beginner)</title>
+    <style>
+      .checklist {
+        font-family: sans-serif;
+      }
+      .checklist-item {
+        margin-bottom: 25px;
+      }
+      textarea {
+        width: 95%;
+        height: 100px;
+      }
+      .sc-description {
+        font-style: italic;
+        margin-bottom: 10px;
+        color: #555;
+      }
+      .check-details {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WCAG 2.2 Guideline 1.3 Checklist (Beginner)</h1>
+    <div class="checklist">
+      <div class="checklist-item">
+        <input type="checkbox" id="info-and-relationships" />
+        <label for="info-and-relationships"
+          ><strong>1.3.1 Info and Relationships:</strong> Make sure information
+          is presented in a logical way.</label
+        ><br />
+        <div class="sc-description">
+          This means using headings, lists, and other formatting to organize
+          content so people can understand how it's connected.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Headings:</strong> Are headings used to organize sections
+              of content?
+            </li>
+            <li>
+              <strong>Lists:</strong> Are lists used for items that belong
+              together?
+            </li>
+            <li>
+              <strong>Layout:</strong> Is the content organized in a way that
+              makes sense?
+            </li>
+            <li>
+              <strong>Screen readers:</strong> Does a screen reader present the
+              information in a logical order?
+            </li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-info-and-relationships"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="meaningful-sequence" />
+        <label for="meaningful-sequence"
+          ><strong>1.3.2 Meaningful Sequence:</strong> Present content in a
+          logical order.</label
+        ><br />
+        <div class="sc-description">
+          This means putting content in an order that makes sense, so people
+          aren't confused.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Reading order:</strong> Is the content presented in the
+              order it should be read?
+            </li>
+            <li>
+              <strong>Screen readers:</strong> Does a screen reader read the
+              content in the correct order?
+            </li>
+            <li>
+              <strong>Keyboard navigation:</strong> Can you tab through the
+              content in a logical order?
+            </li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-meaningful-sequence"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="sensory-characteristics" />
+        <label for="sensory-characteristics"
+          ><strong>1.3.3 Sensory Characteristics:</strong> Use different ways to
+          present information.</label
+        ><br />
+        <div class="sc-description">
+          This means using more than just color to convey information, so people
+          who can't see color can still understand it.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Color:</strong> Is color the only way to tell things
+              apart?
+            </li>
+            <li>
+              <strong>Alternatives:</strong> Are there other ways to understand
+              the information, like text labels, patterns, or shapes?
+            </li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-sensory-characteristics"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="orientation" />
+        <label for="orientation"
+          ><strong>1.3.4 Orientation:</strong> Make sure content works in both
+          landscape and portrait mode.</label
+        ><br />
+        <div class="sc-description">
+          This means the website or app should work whether you're holding your
+          phone sideways or upright.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Rotate device:</strong> Rotate your phone or tablet. Does
+              the content still display correctly?
+            </li>
+            <li>
+              <strong>Content:</strong> Is any content cut off or overlapping?
+            </li>
+            <li>
+              <strong>Functionality:</strong> Do all the buttons and links still
+              work?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-orientation" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="identify-input-purpose" />
+        <label for="identify-input-purpose"
+          ><strong>1.3.5 Identify Input Purpose:</strong> Clearly label form
+          fields.</label
+        ><br />
+        <div class="sc-description">
+          This means using labels to tell people what information to put in each
+          form field.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Labels:</strong> Does each form field have a clear label?
+            </li>
+            <li>
+              <strong>Instructions:</strong> Are there instructions if needed?
+            </li>
+            <li>
+              <strong>Screen readers:</strong> Does a screen reader correctly
+              identify the purpose of each field?
+            </li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-identify-input-purpose"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="error-identification" />
+        <label for="error-identification"
+          ><strong>1.3.6 Error Identification:</strong> Help users find and fix
+          errors.</label
+        ><br />
+        <div class="sc-description">
+          This means telling people if they make a mistake in a form and helping
+          them fix it.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Error messages:</strong> Are there clear error messages?
+            </li>
+            <li>
+              <strong>Error location:</strong> Is the error highlighted or easy
+              to find?
+            </li>
+            <li>
+              <strong>Instructions:</strong> Are there instructions on how to
+              fix the error?
+            </li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-error-identification"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
+    </div>
+
+    <script>
+      function getChecklistData() {
+        const notes = {
+          "info-and-relationships": {
+            notes: document.getElementById("notes-info-and-relationships")
+              .value,
+            applicable: document.getElementById("info-and-relationships")
+              .checked,
+          },
+          "meaningful-sequence": {
+            notes: document.getElementById("notes-meaningful-sequence").value,
+            applicable: document.getElementById("meaningful-sequence").checked,
+          },
+          "sensory-characteristics": {
+            notes: document.getElementById("notes-sensory-characteristics")
+              .value,
+            applicable: document.getElementById("sensory-characteristics")
+              .checked,
+          },
+          orientation: {
+            notes: document.getElementById("notes-orientation").value,
+            applicable: document.getElementById("orientation").checked,
+          },
+          "identify-input-purpose": {
+            notes: document.getElementById("notes-identify-input-purpose")
+              .value,
+            applicable: document.getElementById("identify-input-purpose")
+              .checked,
+          },
+          "error-identification": {
+            notes: document.getElementById("notes-error-identification").value,
+            applicable: document.getElementById("error-identification").checked,
+          },
+          // ... (add other checklist items with their notes and applicable status)
+        };
+        return JSON.stringify(notes);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WCAG 2.2 Guideline 2.5 Checklist (Beginner)</title>
+    <style>
+      .checklist {
+        font-family: sans-serif;
+      }
+      .checklist-item {
+        margin-bottom: 25px;
+      }
+      textarea {
+        width: 95%;
+        height: 100px;
+      }
+      .sc-description {
+        font-style: italic;
+        margin-bottom: 10px;
+        color: #555;
+      }
+      .check-details {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WCAG 2.2 Guideline 2.5 Checklist (Beginner)</h1>
+    <div class="checklist">
+      <div class="checklist-item">
+        <input type="checkbox" id="pointer-gestures" />
+        <label for="pointer-gestures"
+          ><strong>2.5.1 Pointer Gestures:</strong> All functionality that uses
+          multipoint or path-based gestures for operation can be operated with a
+          single pointer without a path-based gesture, unless a multipoint or
+          path-based gesture is essential.</label
+        ><br />
+        <div class="sc-description">
+          This means that if you can do something on the website using complex
+          gestures (like pinching or swiping), you should also be able to do it
+          with simple clicks or taps.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Complex gestures:</strong> Are there any actions that
+              require complex gestures (e.g., zooming, rotating)?
+            </li>
+            <li>
+              <strong>Single pointer alternative:</strong> Can you perform the
+              same actions with single clicks or taps?
+            </li>
+            <li>
+              <strong>Essential gestures:</strong> Are the complex gestures
+              essential to the functionality (e.g., drawing)?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-pointer-gestures" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="pointer-cancellation" />
+        <label for="pointer-cancellation"
+          ><strong>2.5.2 Pointer Cancellation:</strong> For functionality that
+          can be operated using a single pointer, at least one of the following
+          is true:
+          <ul>
+            <li>
+              <strong>No down-event:</strong> The down-event of the pointer is
+              not used to execute any part of the function; or
+            </li>
+            <li>
+              <strong>Up-event required:</strong> The up-event of the pointer is
+              required to execute the function; or
+            </li>
+            <li>
+              <strong>Undo/redo:</strong> The function can be undone and redone;
+              or
+            </li>
+            <li>
+              <strong>Target size:</strong> The target for the pointer is at
+              least 24 by 24 CSS pixels; or
+            </li>
+            <li>
+              <strong>Target spacing:</strong> The up-event target is at least
+              24 CSS pixels away from any other up-event target; or
+            </li>
+            <li>
+              <strong>Override:</strong> The user is given the option to
+              override the action being performed before it is executed.
+            </li>
+          </ul> </label
+        ><br />
+        <div class="sc-description">
+          This means that if you accidentally click or tap on something, you
+          should be able to cancel the action or undo it.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Accidental clicks:</strong> Are there any actions that
+              happen immediately when you click or tap?
+            </li>
+            <li>
+              <strong>Cancellation options:</strong> Can you cancel the action,
+              undo it, or is there a confirmation step?
+            </li>
+            <li>
+              <strong>Target size and spacing:</strong> Are the clickable areas
+              large enough and spaced out enough to avoid accidental clicks?
+            </li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-pointer-cancellation"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="label-in-name" />
+        <label for="label-in-name"
+          ><strong>2.5.3 Label in Name:</strong> For user interface components
+          with labels that include text or images of text, the name contains the
+          text that is presented visually.</label
+        ><br />
+        <div class="sc-description">
+          This means that the name of a component (like a button) should match
+          the label that you see on the screen. This helps people who use screen
+          readers understand what the component is.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Component names:</strong> Do the names of buttons, form
+              fields, and other components match their visual labels?
+            </li>
+            <li>
+              <strong>Screen reader test:</strong> Does a screen reader announce
+              the correct name for each component?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-label-in-name" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="motion-actuation" />
+        <label for="motion-actuation"
+          ><strong>2.5.4 Motion Actuation:</strong> Functionality that can be
+          operated by device motion or user motion can also be operated by user
+          interface components and responding to the motion can be disabled to
+          prevent accidental actuation, except when:
+          <ul>
+            <li>
+              <strong>Supported Interface:</strong> The motion is used to
+              operate functionality through an accessibility supported
+              interface; or
+            </li>
+            <li>
+              <strong>Essential:</strong> The motion is essential for the
+              function and doing so would invalidate the activity.
+            </li>
+          </ul> </label
+        ><br />
+        <div class="sc-description">
+          This means that if you can do something on the website by moving your
+          device or yourself (like shaking your phone), you should also be able
+          to do it with buttons or other controls on the screen. You should also
+          be able to turn off motion controls if you want to.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Motion controls:</strong> Are there any features that use
+              motion controls?
+            </li>
+            <li>
+              <strong>Alternative controls:</strong> Can you do the same thing
+              with on-screen controls?
+            </li>
+            <li>
+              <strong>Disable motion:</strong> Can you turn off the motion
+              controls?
+            </li>
+            <li>
+              <strong>Exceptions:</strong> Is the motion essential to the
+              functionality (e.g., a game that requires tilting)?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-motion-actuation" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="target-size" />
+        <label for="target-size"
+          ><strong>2.5.5 Target Size:</strong> The size of the target for
+          pointer inputs is at least 44 by 44 CSS pixels except when:
+          <ul>
+            <li>
+              <strong>Equivalent:</strong> The target is available through an
+              equivalent link or control on the same page that is at least 44 by
+              44 CSS pixels; or
+            </li>
+            <li>
+              <strong>Inline:</strong> The target is in a sentence or block of
+              text; or
+            </li>
+            <li>
+              <strong>User Agent Control:</strong> The size of the target is
+              determined by the user agent and is not modified by the author; or
+            </li>
+            <li>
+              <strong>Essential:</strong> A particular presentation of the
+              target is essential to the information being conveyed.
+            </li>
+          </ul> </label
+        ><br />
+        <div class="sc-description">
+          This means that clickable areas should be big enough for people to
+          easily tap or click on them, especially on touchscreens.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Target size:</strong> Are buttons, links, and other
+              interactive elements at least 44 by 44 pixels?
+            </li>
+            <li>
+              <strong>Exceptions:</strong> Does the target fit into any of the
+              exceptions (equivalent target, inline, user agent control,
+              essential)?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-target-size" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="concurrent-input-mechanisms" />
+        <label for="concurrent-input-mechanisms"
+          ><strong>2.5.6 Concurrent Input Mechanisms:</strong> Web content does
+          not restrict use of input modalities available on a platform except
+          where the restriction is essential, required to ensure the security of
+          the content, or required to respect user settings.</label
+        ><br />
+        <div class="sc-description">
+          This means that the website shouldn't stop you from using different
+          input methods (like a mouse, keyboard, or touchscreen) at the same
+          time, unless it's necessary for security or user preferences.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Input restrictions:</strong> Are there any limitations on
+              using different input methods together?
+            </li>
+            <li>
+              <strong>Essential restrictions:</strong> Are the restrictions
+              essential for security or user settings?
+            </li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-concurrent-input-mechanisms"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
+    </div>
+
+    <script>
+      function getChecklistData() {
+        const notes = {
+          "pointer-gestures": {
+            notes: document.getElementById("notes-pointer-gestures").value,
+            applicable: document.getElementById("pointer-gestures").checked,
+          },
+          "pointer-cancellation": {
+            notes: document.getElementById("notes-pointer-cancellation").value,
+            applicable: document.getElementById("pointer-cancellation").checked,
+          },
+          "label-in-name": {
+            notes: document.getElementById("notes-label-in-name").value,
+            applicable: document.getElementById("label-in-name").checked,
+          },
+          "motion-actuation": {
+            notes: document.getElementById("notes-motion-actuation").value,
+            applicable: document.getElementById("motion-actuation").checked,
+          },
+          "target-size": {
+            notes: document.getElementById("notes-target-size").value,
+            applicable: document.getElementById("target-size").checked,
+          },
+          "concurrent-input-mechanisms": {
+            notes: document.getElementById("notes-concurrent-input-mechanisms")
+              .value,
+            applicable: document.getElementById("concurrent-input-mechanisms")
+              .checked,
+          },
+          // ... (add other checklist items with their notes and applicable status)
+        };
+        return JSON.stringify(notes);
+      }
+    </script>
+  </body>
+</html>

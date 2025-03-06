@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WCAG 2.2 Guideline 2.3 Checklist (Beginner)</title>
+    <style>
+      .checklist {
+        font-family: sans-serif;
+      }
+      .checklist-item {
+        margin-bottom: 25px;
+      }
+      textarea {
+        width: 95%;
+        height: 100px;
+      }
+      .sc-description {
+        font-style: italic;
+        margin-bottom: 10px;
+        color: #555;
+      }
+      .check-details {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WCAG 2.2 Guideline 2.3 Checklist (Beginner)</h1>
+    <div class="checklist">
+      <div class="checklist-item">
+        <input type="checkbox" id="three-flashes-or-below-threshold" />
+        <label for="three-flashes-or-below-threshold"
+          ><strong>2.3.1 Three Flashes or Below Threshold:</strong> Web pages do
+          not contain anything that flashes more than three times in any one
+          second period, or the flash is below the general flash and red flash
+          thresholds.</label
+        ><br />
+        <div class="sc-description">
+          This means that there shouldn't be anything flashing too much on the
+          screen, as this can cause seizures for some people.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Flashing content:</strong> Is there anything flashing on
+              the screen?
+            </li>
+            <li>
+              <strong>Flash rate:</strong> Does it flash more than three times
+              per second?
+            </li>
+            <li>
+              <strong>Flash threshold:</strong> Is the flashing below the
+              acceptable threshold? (There are tools to check this.)
+            </li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-three-flashes-or-below-threshold"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="three-flashes" />
+        <label for="three-flashes"
+          ><strong>2.3.2 Three Flashes:</strong> Web pages do not contain
+          anything that flashes more than three times in any one second
+          period.</label
+        ><br />
+        <div class="sc-description">
+          This is similar to the previous rule, but it's stricter. It means
+          nothing should flash more than three times per second, no matter how
+          bright it is.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Flashing content:</strong> Is there anything flashing on
+              the screen?
+            </li>
+            <li>
+              <strong>Flash rate:</strong> Does it flash more than three times
+              per second?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-three-flashes" placeholder="Notes:"></textarea>
+      </div>
+    </div>
+
+    <script>
+      function getChecklistData() {
+        const notes = {
+          "three-flashes-or-below-threshold": {
+            notes: document.getElementById(
+              "notes-three-flashes-or-below-threshold"
+            ).value,
+            applicable: document.getElementById(
+              "three-flashes-or-below-threshold"
+            ).checked,
+          },
+          "three-flashes": {
+            notes: document.getElementById("notes-three-flashes").value,
+            applicable: document.getElementById("three-flashes").checked,
+          },
+          // ... (add other checklist items with their notes and applicable status)
+        };
+        return JSON.stringify(notes);
+      }
+    </script>
+  </body>
+</html>

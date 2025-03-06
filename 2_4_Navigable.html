@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WCAG 2.2 Guideline 2.4 Checklist (Beginner)</title>
+    <style>
+      .checklist {
+        font-family: sans-serif;
+      }
+      .checklist-item {
+        margin-bottom: 25px;
+      }
+      textarea {
+        width: 95%;
+        height: 100px;
+      }
+      .sc-description {
+        font-style: italic;
+        margin-bottom: 10px;
+        color: #555;
+      }
+      .check-details {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WCAG 2.2 Guideline 2.4 Checklist (Beginner)</h1>
+    <div class="checklist">
+      <div class="checklist-item">
+        <input type="checkbox" id="bypass-blocks" />
+        <label for="bypass-blocks"
+          ><strong>2.4.1 Bypass Blocks:</strong> A mechanism is available to
+          bypass blocks of content that are repeated on multiple Web
+          pages.</label
+        ><br />
+        <div class="sc-description">
+          This means that if the same content appears on lots of pages (like a
+          header or menu), there should be a way to skip over it. This is
+          helpful for people who use screen readers, as it saves them time.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Repeated content:</strong> Is there any content that's
+              repeated on many pages (e.g., header, navigation menu)?
+            </li>
+            <li>
+              <strong>Skip links:</strong> Are there "skip links" or other ways
+              to bypass the repeated content?
+            </li>
+            <li>
+              <strong>Screen reader test:</strong> Does a screen reader announce
+              a way to bypass the repeated content?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-bypass-blocks" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="page-titled" />
+        <label for="page-titled"
+          ><strong>2.4.2 Page Titled:</strong> Web pages have titles that
+          describe topic or purpose.</label
+        ><br />
+        <div class="sc-description">
+          This means that every page should have a title that tells you what the
+          page is about. This helps people understand where they are on the
+          website.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li><strong>Page titles:</strong> Does each page have a title?</li>
+            <li>
+              <strong>Descriptive titles:</strong> Do the titles accurately
+              describe the page's content or purpose?
+            </li>
+            <li>
+              <strong>Unique titles:</strong> Are the titles different for
+              different pages?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-page-titled" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="focus-order" />
+        <label for="focus-order"
+          ><strong>2.4.3 Focus Order:</strong> If a Web page can be navigated
+          sequentially and the navigation sequences affect meaning or operation,
+          focusable components receive focus in an order that preserves meaning
+          and operability.</label
+        ><br />
+        <div class="sc-description">
+          This means that when you tab through the page with your keyboard, the
+          order of the elements should make sense.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Tab order:</strong> Use the Tab key to move through the
+              page. Does the focus move in a logical order?
+            </li>
+            <li>
+              <strong>Meaning and operation:</strong> Does the tab order affect
+              how you understand or use the page?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-focus-order" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="link-purpose-in-context" />
+        <label for="link-purpose-in-context"
+          ><strong>2.4.4 Link Purpose (In Context):</strong> The purpose of each
+          link can be determined from the link text alone or from the link text
+          together with its programmatically determined link context, except
+          where the purpose of the link would be ambiguous to users in
+          general.</label
+        ><br />
+        <div class="sc-description">
+          This means you should be able to understand what a link does just by
+          reading the link text or the text around it.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Link text:</strong> Does the link text describe where the
+              link goes or what it does?
+            </li>
+            <li>
+              <strong>Context:</strong> If the link text alone isn't clear, does
+              the surrounding text provide enough information?
+            </li>
+            <li>
+              <strong>Avoid vague links:</strong> Avoid links like "click here"
+              or "read more."
+            </li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-link-purpose-in-context"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="multiple-ways" />
+        <label for="multiple-ways"
+          ><strong>2.4.5 Multiple Ways:</strong> More than one way is available
+          to locate a Web page within a set of Web pages except where the Web
+          Page is the result of, or a step in, a process.</label
+        ><br />
+        <div class="sc-description">
+          This means there should be more than one way to find a page on the
+          website, like a search bar, site map, or breadcrumb trail.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Navigation options:</strong> Are there multiple ways to
+              navigate the website (e.g., menus, search, site map)?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-multiple-ways" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="headings-and-labels" />
+        <label for="headings-and-labels"
+          ><strong>2.4.6 Headings and Labels:</strong> Headings and labels
+          describe topic or purpose.</label
+        ><br />
+        <div class="sc-description">
+          This means that headings and labels should clearly describe the
+          content they relate to.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Headings:</strong> Do headings accurately describe the
+              sections they introduce?
+            </li>
+            <li>
+              <strong>Labels:</strong> Do labels clearly identify the purpose of
+              form fields or other elements?
+            </li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-headings-and-labels"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="focus-visible" />
+        <label for="focus-visible"
+          ><strong>2.4.7 Focus Visible:</strong> Any keyboard operable user
+          interface has a mode of operation where the keyboard focus indicator
+          is visible.</label
+        ><br />
+        <div class="sc-description">
+          This means that when you tab through the page with your keyboard, you
+          should be able to see where the focus is.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Keyboard navigation:</strong> Use the Tab key to move
+              through the page. Is there a clear visual indicator showing which
+              element has focus?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-focus-visible" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="location" />
+        <label for="location"
+          ><strong>2.4.11 Location:</strong> Information about the user's
+          location within a set of Web pages is available.</label
+        ><br />
+        <div class="sc-description">
+          This means that the website should provide a way for you to know where
+          you are within the site's structure.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Breadcrumbs:</strong> Are there breadcrumbs showing the
+              page hierarchy?
+            </li>
+            <li>
+              <strong>Navigation menus:</strong> Does the current page have a
+              visual indicator in the navigation menu?
+            </li>
+            <li>
+              <strong>Headings:</strong> Are headings used to provide context
+              about the page's location within the content?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-location" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="section-headings" />
+        <label for="section-headings"
+          ><strong>2.4.12 Section Headings:</strong> A hierarchy of section
+          headings is used to organize the content.</label
+        ><br />
+        <div class="sc-description">
+          This means using different levels of headings (like H1, H2, H3) to
+          structure the content and make it easier to understand.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Heading hierarchy:</strong> Are headings used in a logical
+              order (H1, then H2, then H3, etc.)?
+            </li>
+            <li>
+              <strong>Screen reader test:</strong> Does a screen reader
+              correctly identify the heading levels?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-section-headings" placeholder="Notes:"></textarea>
+      </div>
+    </div>
+
+    <script>
+      function getChecklistData() {
+        const notes = {
+          "bypass-blocks": {
+            notes: document.getElementById("notes-bypass-blocks").value,
+            applicable: document.getElementById("bypass-blocks").checked,
+          },
+          "page-titled": {
+            notes: document.getElementById("notes-page-titled").value,
+            applicable: document.getElementById("page-titled").checked,
+          },
+          "focus-order": {
+            notes: document.getElementById("notes-focus-order").value,
+            applicable: document.getElementById("focus-order").checked,
+          },
+          "link-purpose-in-context": {
+            notes: document.getElementById("notes-link-purpose-in-context")
+              .value,
+            applicable: document.getElementById("link-purpose-in-context")
+              .checked,
+          },
+          "multiple-ways": {
+            notes: document.getElementById("notes-multiple-ways").value,
+            applicable: document.getElementById("multiple-ways").checked,
+          },
+          "headings-and-labels": {
+            notes: document.getElementById("notes-headings-and-labels").value,
+            applicable: document.getElementById("headings-and-labels").checked,
+          },
+          "focus-visible": {
+            notes: document.getElementById("notes-focus-visible").value,
+            applicable: document.getElementById("focus-visible").checked,
+          },
+          location: {
+            notes: document.getElementById("notes-location").value,
+            applicable: document.getElementById("location").checked,
+          },
+          "section-headings": {
+            notes: document.getElementById("notes-section-headings").value,
+            applicable: document.getElementById("section-headings").checked,
+          },
+          // ... (add other checklist items with their notes and applicable status)
+        };
+        return JSON.stringify(notes);
+      }
+    </script>
+  </body>
+</html>

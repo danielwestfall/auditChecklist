@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WCAG 2.2 Guideline 1.1 Checklist</title>
+    <style>
+      .checklist {
+        font-family: sans-serif;
+      }
+      .checklist-item {
+        margin-bottom: 10px;
+      }
+      textarea {
+        width: 90%;
+        height: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WCAG 2.2 Guideline 1.1 Checklist (Beginner)</h1>
+    <div class="checklist">
+      <div class="checklist-item">
+        <input type="checkbox" id="non-text" />
+        <label for="non-text"
+          ><strong>1.1.1 Non-text Content:</strong> Provide text alternatives
+          for non-text content.</label
+        ><br />
+        <div class="sc-description">
+          This means that if you have anything that isn't text (like pictures,
+          videos, or audio), you need to provide a text version so people who
+          can't see or hear it can still understand it.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Images:</strong> Do all images have "alt text" that
+              describes what the image shows? (Right-click an image and look for
+              "Inspect" or "View Page Source" to see the code, and look for
+              "alt=")
+            </li>
+            <li>
+              <strong>Icons:</strong> Are icons explained with text or alt text?
+            </li>
+            <li>
+              <strong>Videos:</strong> Do videos have captions or transcripts?
+            </li>
+            <li><strong>Audio:</strong> Do audio files have transcripts?</li>
+            <li>
+              <strong>Charts/Graphs:</strong> Are charts and graphs explained
+              with text or a text summary?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-non-text" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="audio-video" />
+        <label for="audio-video"
+          ><strong>1.1.2 Audio-only and Video-only (Prerecorded):</strong>
+          Provide alternatives for audio and video without visuals or
+          sound.</label
+        ><br />
+        <div class="sc-description">
+          If you have audio or video files that don't have a visual or sound
+          component, you need to provide a way for people to understand them.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Audio-only:</strong> Does the audio have a transcript or
+              audio description?
+            </li>
+            <li>
+              <strong>Video-only:</strong> Does the video have audio
+              descriptions or a transcript?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-audio-video" placeholder="Notes:"></textarea>
+        <ul>
+          <li>
+            <input type="checkbox" id="audio-only" />
+            <label for="audio-only">Prerecorded Audio-only</label>
+          </li>
+          <li>
+            <input type="checkbox" id="video-only" />
+            <label for="video-only">Prerecorded Video-only</label>
+          </li>
+        </ul>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="contrast" />
+        <label for="contrast"
+          ><strong>1.1.3 Contrast (Enhanced):</strong> Make sure text is easy to
+          read against its background.</label
+        ><br />
+        <div class="sc-description">
+          This means the color of the text and the background should be
+          different enough so that people with low vision can read it easily.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Use a contrast checker tool:</strong> Search for "WCAG
+              contrast checker" online. Enter the text and background colors to
+              see if they pass.
+            </li>
+            <li>
+              <strong>Large text:</strong> Large text (18pt or 14pt bold) needs
+              less contrast.
+            </li>
+            <li>
+              <strong>Logos:</strong> Logos and brand names are usually exempt.
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-contrast" placeholder="Notes:"></textarea>
+        <ul>
+          <li>
+            <input type="checkbox" id="contrastLargeText" />
+            <label for="contrastLargeText">Large Text</label>
+          </li>
+          <li>
+            <input type="checkbox" id="contrastIncidental" />
+            <label for="contrastIncidental">Incidental</label>
+          </li>
+          <li>
+            <input type="checkbox" id="contrastLogotypes" />
+            <label for="contrastLogotypes">Logotypes</label>
+          </li>
+        </ul>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="resize-text" />
+        <label for="resize-text"
+          ><strong>1.1.4 Resize text:</strong> Make sure text can be made bigger
+          without losing information.</label
+        ><br />
+        <div class="sc-description">
+          People should be able to make the text bigger in their browser without
+          the text getting cut off or overlapping.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Zoom in:</strong> Use your browser's zoom feature (usually
+              Ctrl + or Cmd +) to zoom to 200%.
+            </li>
+            <li>
+              <strong>Check for overlap:</strong> Make sure no text or other
+              content overlaps or disappears.
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-resize-text" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="images-text" />
+        <label for="images-text"
+          ><strong>1.1.5 Images of text:</strong> Use real text instead of
+          images of text when possible.</label
+        ><br />
+        <div class="sc-description">
+          Images of text can't be resized or read by screen readers as easily as
+          real text.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Use text:</strong> Replace images of text with real text
+              whenever you can.
+            </li>
+            <li>
+              <strong>Exceptions:</strong> If the text needs to look a certain
+              way (like a logo), an image of text might be okay.
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-images-text" placeholder="Notes:"></textarea>
+        <ul>
+          <li>
+            <input type="checkbox" id="textCustomizable" />
+            <label for="textCustomizable">Customizable</label>
+          </li>
+          <li>
+            <input type="checkbox" id="textEssential" />
+            <label for="textEssential">Essential</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      function getChecklistData() {
+        const notes = {
+          "non-text": {
+            notes: document.getElementById("notes-non-text").value,
+            applicable: document.getElementById("non-text").checked,
+          },
+          "audio-video": {
+            notes: document.getElementById("notes-audio-video").value,
+            applicable: document.getElementById("audio-video").checked,
+          },
+          contrast: {
+            notes: document.getElementById("notes-contrast").value,
+            applicable: document.getElementById("contrast").checked,
+          },
+          "resize-text": {
+            notes: document.getElementById("notes-resize-text").value,
+            applicable: document.getElementById("resize-text").checked,
+          },
+          "images-text": {
+            notes: document.getElementById("notes-images-text").value,
+            applicable: document.getElementById("images-text").checked,
+          },
+          // ... (add other checklist items with their notes and applicable status)
+        };
+        return JSON.stringify(notes);
+      }
+    </script>
+  </body>
+</html>

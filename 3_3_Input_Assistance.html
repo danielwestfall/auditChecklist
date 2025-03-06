@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WCAG 2.2 Guideline 3.3 Checklist (Beginner)</title>
+    <style>
+      .checklist {
+        font-family: sans-serif;
+      }
+      .checklist-item {
+        margin-bottom: 25px;
+      }
+      textarea {
+        width: 95%;
+        height: 100px;
+      }
+      .sc-description {
+        font-style: italic;
+        margin-bottom: 10px;
+        color: #555;
+      }
+      .check-details {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WCAG 2.2 Guideline 3.3 Checklist (Beginner)</h1>
+    <div class="checklist">
+      <div class="checklist-item">
+        <input type="checkbox" id="error-prevention-all" />
+        <label for="error-prevention-all"
+          ><strong>3.3.1 Error Prevention (All):</strong> For Web pages that
+          cause legal commitments or financial transactions for the user to
+          achieve their outcome, that modify or delete user-controllable data in
+          data storage systems, or that submit user test responses, at least one
+          of the following is true:
+          <ul>
+            <li><strong>Reversible:</strong> Submissions are reversible.</li>
+            <li>
+              <strong>Checked:</strong> Data entered by the user is checked for
+              input errors and the user is provided an opportunity to correct
+              them.
+            </li>
+            <li>
+              <strong>Confirmed:</strong> A mechanism is available for
+              reviewing, confirming, and correcting information before
+              finalizing the submission.
+            </li>
+          </ul> </label
+        ><br />
+        <div class="sc-description">
+          This means that if you're filling out an important form (like for a
+          purchase or legal document), the website should help you avoid
+          mistakes. It should let you check your answers, correct errors, or
+          undo the submission.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Important forms:</strong> Are there any forms for legal
+              commitments, financial transactions, or submitting test responses?
+            </li>
+            <li>
+              <strong>Error prevention:</strong> Does the form allow you to
+              review, confirm, and correct information before submitting?
+            </li>
+            <li>
+              <strong>Reversible submissions:</strong> Can you undo the
+              submission if you make a mistake?
+            </li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-error-prevention-all"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="labels-or-instructions" />
+        <label for="labels-or-instructions"
+          ><strong>3.3.2 Labels or Instructions:</strong> Labels or instructions
+          are provided when content requires user input.</label
+        ><br />
+        <div class="sc-description">
+          This means that forms and other input fields should have clear labels
+          or instructions so you know what to type or select.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Form fields:</strong> Do all form fields have labels?
+            </li>
+            <li>
+              <strong>Instructions:</strong> Are there clear instructions for
+              completing the form or inputting information?
+            </li>
+            <li>
+              <strong>Purpose:</strong> Is it clear what kind of information
+              should be entered in each field (e.g., numbers, dates, text)?
+            </li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-labels-or-instructions"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="error-suggestion" />
+        <label for="error-suggestion"
+          ><strong>3.3.3 Error Suggestion:</strong> If an input error is
+          automatically detected and suggestions for correction are known, then
+          the suggestions are provided to the user, unless it would jeopardize
+          the security or purpose of the content.</label
+        ><br />
+        <div class="sc-description">
+          This means that if the website finds a mistake in your input, it
+          should suggest ways to fix it.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Error detection:</strong> Does the website automatically
+              detect errors (e.g., invalid email format, incorrect date)?
+            </li>
+            <li>
+              <strong>Suggestions:</strong> Are suggestions provided for
+              correcting the error?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-error-suggestion" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="error-prevention-legal-financial" />
+        <label for="error-prevention-legal-financial"
+          ><strong>3.3.4 Error Prevention (Legal, Financial, Data):</strong> For
+          Web pages that require the user to submit information that may have
+          legal commitments or financial transactions for the user, that modify
+          or delete user-controllable data in data storage systems, or that
+          submit user test responses, at least one of the following is true:
+          <ul>
+            <li><strong>Reversible:</strong> Submissions are reversible.</li>
+            <li>
+              <strong>Checked:</strong> Data entered by the user is checked for
+              input errors and the user is provided an opportunity to correct
+              them.
+            </li>
+            <li>
+              <strong>Confirmed:</strong> A mechanism is available for
+              reviewing, confirming, and correcting information before
+              finalizing the submission.
+            </li>
+          </ul> </label
+        ><br />
+        <div class="sc-description">
+          This is similar to 3.3.1, but it focuses on forms that involve legal
+          or financial information, or that change important data. The website
+          should provide extra help to prevent mistakes in these cases.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Sensitive forms:</strong> Are there any forms that handle
+              legal, financial, or important data?
+            </li>
+            <li>
+              <strong>Error prevention:</strong> Are there mechanisms to prevent
+              errors, such as input validation, confirmation steps, or the
+              ability to undo submissions?
+            </li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-error-prevention-legal-financial"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="help" />
+        <label for="help"
+          ><strong>3.3.5 Help:</strong> Context-sensitive help is
+          available.</label
+        ><br />
+        <div class="sc-description">
+          This means that the website should provide help information that's
+          relevant to the task you're trying to do.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Help sections:</strong> Are there help sections or FAQs?
+            </li>
+            <li>
+              <strong>Contextual help:</strong> Is the help information relevant
+              to the current page or task?
+            </li>
+            <li>
+              <strong>Accessibility:</strong> Is the help information itself
+              accessible (e.g., easy to read, keyboard accessible)?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-help" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="error-prevention-test" />
+        <label for="error-prevention-test"
+          ><strong>3.3.6 Error Prevention (Test):</strong> For Web pages that
+          require the user to submit user test responses, at least one of the
+          following is true:
+          <ul>
+            <li><strong>Reversible:</strong> Submissions are reversible.</li>
+            <li>
+              <strong>Checked:</strong> Data entered by the user is checked for
+              input errors and the user is provided an opportunity to correct
+              them.
+            </li>
+            <li>
+              <strong>Confirmed:</strong> A mechanism is available for
+              reviewing, confirming, and correcting information before
+              finalizing the submission.
+            </li>
+          </ul> </label
+        ><br />
+        <div class="sc-description">
+          This is similar to 3.3.1 and 3.3.4, but it applies specifically to
+          online tests. The website should help you avoid making mistakes when
+          submitting test answers.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Online tests:</strong> Are there any online tests or
+              quizzes?
+            </li>
+            <li>
+              <strong>Error prevention:</strong> Are there ways to review and
+              correct answers before submitting the test?
+            </li>
+            <li>
+              <strong>Reversible submissions:</strong> Can you change your
+              answers after submitting the test?
+            </li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-error-prevention-test"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
+    </div>
+
+    <script>
+      function getChecklistData() {
+        const notes = {
+          "error-prevention-all": {
+            notes: document.getElementById("notes-error-prevention-all").value,
+            applicable: document.getElementById("error-prevention-all").checked,
+          },
+          "labels-or-instructions": {
+            notes: document.getElementById("notes-labels-or-instructions")
+              .value,
+            applicable: document.getElementById("labels-or-instructions")
+              .checked,
+          },
+          "error-suggestion": {
+            notes: document.getElementById("notes-error-suggestion").value,
+            applicable: document.getElementById("error-suggestion").checked,
+          },
+          "error-prevention-legal-financial": {
+            notes: document.getElementById(
+              "notes-error-prevention-legal-financial"
+            ).value,
+            applicable: document.getElementById(
+              "error-prevention-legal-financial"
+            ).checked,
+          },
+          help: {
+            notes: document.getElementById("notes-help").value,
+            applicable: document.getElementById("help").checked,
+          },
+          "error-prevention-test": {
+            notes: document.getElementById("notes-error-prevention-test").value,
+            applicable: document.getElementById("error-prevention-test")
+              .checked,
+          },
+          // ... (add other checklist items with their notes and applicable status)
+        };
+        return JSON.stringify(notes);
+      }
+    </script>
+  </body>
+</html>

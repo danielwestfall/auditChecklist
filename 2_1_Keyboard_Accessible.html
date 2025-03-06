@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WCAG 2.2 Guideline 2.1 Checklist (Beginner)</title>
+    <style>
+      .checklist {
+        font-family: sans-serif;
+      }
+      .checklist-item {
+        margin-bottom: 25px;
+      }
+      textarea {
+        width: 95%;
+        height: 100px;
+      }
+      .sc-description {
+        font-style: italic;
+        margin-bottom: 10px;
+        color: #555;
+      }
+      .check-details {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WCAG 2.2 Guideline 2.1 Checklist (Beginner)</h1>
+    <div class="checklist">
+      <div class="checklist-item">
+        <input type="checkbox" id="keyboard" />
+        <label for="keyboard"
+          ><strong>2.1.1 Keyboard:</strong> All functionality of the content is
+          operable through a keyboard interface without requiring specific
+          timings for individual keystrokes, except where the underlying
+          function requires input that depends on the path of the user's
+          movement and not just the endpoints.</label
+        ><br />
+        <div class="sc-description">
+          This means you should be able to use the website or app with just your
+          keyboard, without needing a mouse.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Navigation:</strong> Can you use the Tab key to move
+              between links, buttons, and form fields?
+            </li>
+            <li>
+              <strong>Interaction:</strong> Can you use the Enter or Spacebar
+              keys to activate links and buttons?
+            </li>
+            <li>
+              <strong>Forms:</strong> Can you fill out forms and submit them
+              using only the keyboard?
+            </li>
+            <li>
+              <strong>Media players:</strong> Can you control media players
+              (play, pause, volume) with the keyboard?
+            </li>
+            <li>
+              <strong>No mouse traps:</strong> Are there any places where you
+              get stuck and can't navigate away with the keyboard?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-keyboard" placeholder="Notes:"></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="keyboard-no-exception" />
+        <label for="keyboard-no-exception"
+          ><strong>2.1.2 No Keyboard Trap:</strong> If keyboard focus can be
+          moved to a component of the page using a keyboard interface, then
+          focus can be moved away from that component using only a keyboard
+          interface, and, if it requires more than unmodified arrow or tab keys
+          or other standard exit methods, the user is advised of the method for
+          moving focus away.</label
+        ><br />
+        <div class="sc-description">
+          This means that if you can tab to something with your keyboard, you
+          should also be able to tab away from it.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Tab through content:</strong> Tab through all interactive
+              elements. Can you always tab away from them?
+            </li>
+            <li>
+              <strong>Pop-ups and modals:</strong> If a pop-up or modal window
+              appears, can you tab out of it or close it with the keyboard?
+            </li>
+            <li>
+              <strong>Embedded content:</strong> Can you tab out of embedded
+              content like videos or maps?
+            </li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-keyboard-no-exception"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
+      <div class="checklist-item">
+        <input type="checkbox" id="character-key-shortcuts" />
+        <label for="character-key-shortcuts"
+          ><strong>2.1.4 Character Key Shortcuts:</strong> If a character key
+          shortcut is implemented in content using only letter (including upper-
+          and lower-case letters), punctuation, number, or symbol characters,
+          then at least one of the following is true:
+          <ul>
+            <li>Turn off: The user can turn the shortcut off.</li>
+            <li>
+              Remap: The user can remap the shortcut to use one or more
+              non-printable keyboard characters (e.g., Ctrl, Alt, etc.).
+            </li>
+            <li>
+              Active only on focus: The shortcut for a user interface component
+              is only active when that component has focus.
+            </li>
+          </ul> </label
+        ><br />
+        <div class="sc-description">
+          This means that if the website uses single-letter keyboard shortcuts,
+          you should be able to turn them off, change them, or use them only
+          when you're focused on a specific part of the page.
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li>
+              <strong>Single-letter shortcuts:</strong> Are there any
+              single-letter shortcuts?
+            </li>
+            <li>
+              <strong>Options:</strong> Can you turn off the shortcuts, remap
+              them, or are they only active on focus?
+            </li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-character-key-shortcuts"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
+    </div>
+
+    <script>
+      function getChecklistData() {
+        const notes = {
+          keyboard: {
+            notes: document.getElementById("notes-keyboard").value,
+            applicable: document.getElementById("keyboard").checked,
+          },
+          "keyboard-no-exception": {
+            notes: document.getElementById("notes-keyboard-no-exception").value,
+            applicable: document.getElementById("keyboard-no-exception")
+              .checked,
+          },
+          "character-key-shortcuts": {
+            notes: document.getElementById("notes-character-key-shortcuts")
+              .value,
+            applicable: document.getElementById("character-key-shortcuts")
+              .checked,
+          },
+          // ... (add other checklist items with their notes and applicable status)
+        };
+        return JSON.stringify(notes);
+      }
+    </script>
+  </body>
+</html>
