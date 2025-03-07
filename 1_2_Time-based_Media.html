@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WCAG 2.2 Guideline 1.2 Checklist (Beginner)</title>
+    <title>Time-based Media</title>
     <style>
       .checklist {
         font-family: sans-serif;
@@ -24,7 +24,7 @@
     </style>
   </head>
   <body>
-    <h1>WCAG 2.2 Guideline 1.2 Checklist (Beginner)</h1>
+    <h1>Time-based Media</h1>
     <div class="checklist">
       <div class="checklist-item">
         <input type="checkbox" id="audio-only-live" />
@@ -248,6 +248,25 @@
     </div>
 
     <script>
+      const inputFields = document.querySelectorAll("input, textarea");
+
+      // Save data to sessionStorage on input change
+      inputFields.forEach((input) => {
+        input.addEventListener("input", () => {
+          sessionStorage.setItem(input.id, input.value);
+        });
+      });
+
+      // Load data from sessionStorage on page load
+      window.addEventListener("load", () => {
+        inputFields.forEach((input) => {
+          const savedValue = sessionStorage.getItem(input.id);
+          if (savedValue) {
+            input.value = savedValue;
+          }
+        });
+      });
+
       function getChecklistData() {
         const notes = {
           "audio-only-live": {
@@ -300,7 +319,6 @@
             applicable: document.getElementById("media-alternative-prerecorded")
               .checked,
           },
-          // ... (add other checklist items with their notes and applicable status)
         };
         return JSON.stringify(notes);
       }
