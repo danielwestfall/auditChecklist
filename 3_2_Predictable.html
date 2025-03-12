@@ -29,8 +29,9 @@
       <div class="checklist-item">
         <input type="checkbox" id="on-focus" />
         <label for="on-focus"
-          ><strong>3.2.1 On Focus:</strong> When any user interface component
-          receives focus, it does not initiate a change of context.</label
+          ><strong>3.2.1 On Focus (Level A):</strong> When any user interface
+          component receives focus, it does not initiate a change of
+          context.</label
         ><br />
         <div class="sc-description">
           This means that when you tab to something on the page, it shouldn't
@@ -61,10 +62,10 @@
       <div class="checklist-item">
         <input type="checkbox" id="on-input" />
         <label for="on-input"
-          ><strong>3.2.2 On Input:</strong> Changing the setting of any user
-          interface component does not automatically cause a change of context
-          unless the user has been advised of the behavior before using the
-          component.</label
+          ><strong>3.2.2 On Input (Level A):</strong> Changing the setting of
+          any user interface component does not automatically cause a change of
+          context unless the user has been advised of the behavior before using
+          the component.</label
         ><br />
         <div class="sc-description">
           This means that when you change something on the page (like typing in
@@ -97,10 +98,10 @@
       <div class="checklist-item">
         <input type="checkbox" id="consistent-navigation" />
         <label for="consistent-navigation"
-          ><strong>3.2.3 Consistent Navigation:</strong> Navigational mechanisms
-          that are repeated on multiple Web pages within a set of Web pages
-          occur in the same relative order each time they are repeated, unless a
-          change is initiated by the user.</label
+          ><strong>3.2.3 Consistent Navigation (Level AA):</strong> Navigational
+          mechanisms that are repeated on multiple Web pages within a set of Web
+          pages occur in the same relative order each time they are repeated,
+          unless a change is initiated by the user.</label
         ><br />
         <div class="sc-description">
           This means that menus and other navigation tools should appear in the
@@ -128,9 +129,9 @@
       <div class="checklist-item">
         <input type="checkbox" id="consistent-identification" />
         <label for="consistent-identification"
-          ><strong>3.2.4 Consistent Identification:</strong> Components that
-          have the same functionality within a set of Web pages are identified
-          consistently.</label
+          ><strong>3.2.4 Consistent Identification (Level AA):</strong>
+          Components that have the same functionality within a set of Web pages
+          are identified consistently.</label
         ><br />
         <div class="sc-description">
           This means that buttons and other interactive elements should look and
@@ -158,6 +159,7 @@
           placeholder="Notes:"
         ></textarea>
       </div>
+      <!-- 3.2.5 AAA 
       <div class="checklist-item">
         <input type="checkbox" id="change-on-request" />
         <label for="change-on-request"
@@ -189,6 +191,30 @@
         </div>
         <textarea id="notes-change-on-request" placeholder="Notes:"></textarea>
       </div>
+-->
+      <div class="checklist-item">
+        <input type="checkbox" id="consistent-help" />
+        <label for="consistent-help"
+          ><strong>3.2.6 Consistent Help (Level A):</strong> Is help
+          consistent.</label
+        ><br />
+        <div class="sc-description">
+          If a web page contains any of the following help mechanisms, and those
+          mechanisms are repeated on multiple web pages within a set of web
+          pages, they occur in the same order relative to other page content,
+          unless a change is initiated by the user:
+        </div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li><strong>Human contact details</strong> ?</li>
+            <li><strong>Human contact mechanism</strong> ?</li>
+            <li><strong>Self-help option:</strong> ?</li>
+            <li><strong>A fully automated contact mechanism:</strong> ?</li>
+          </ul>
+        </div>
+        <textarea id="notes-consistent-help" placeholder="Notes:"></textarea>
+      </div>
     </div>
 
     <script>
@@ -213,28 +239,32 @@
 
       function getChecklistData() {
         const notes = {
-          "on-focus": {
+          "1 - On Focus - A": {
             notes: document.getElementById("notes-on-focus").value,
             applicable: document.getElementById("on-focus").checked,
           },
-          "on-input": {
+          "2 - On Input - A": {
             notes: document.getElementById("notes-on-input").value,
             applicable: document.getElementById("on-input").checked,
           },
-          "consistent-navigation": {
+          "3 - Consistent Navigation - AA": {
             notes: document.getElementById("notes-consistent-navigation").value,
             applicable: document.getElementById("consistent-navigation")
               .checked,
           },
-          "consistent-identification": {
+          "4 - Consistent Identification - AA": {
             notes: document.getElementById("notes-consistent-identification")
               .value,
             applicable: document.getElementById("consistent-identification")
               .checked,
-          },
+          } /*
           "change-on-request": {
             notes: document.getElementById("notes-change-on-request").value,
             applicable: document.getElementById("change-on-request").checked,
+          },*/,
+          "6 - Consistent Help - A": {
+            notes: document.getElementById("notes-consistent-help").value,
+            applicable: document.getElementById("consistent-help").checked,
           },
           // ... (add other checklist items with their notes and applicable status)
         };

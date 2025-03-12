@@ -29,11 +29,11 @@
       <div class="checklist-item">
         <input type="checkbox" id="error-prevention-all" />
         <label for="error-prevention-all"
-          ><strong>3.3.1 Error Prevention (All):</strong> For Web pages that
-          cause legal commitments or financial transactions for the user to
-          achieve their outcome, that modify or delete user-controllable data in
-          data storage systems, or that submit user test responses, at least one
-          of the following is true:
+          ><strong>3.3.1 Error Prevention (All) (Level A):</strong> For Web
+          pages that cause legal commitments or financial transactions for the
+          user to achieve their outcome, that modify or delete user-controllable
+          data in data storage systems, or that submit user test responses, at
+          least one of the following is true:
           <ul>
             <li><strong>Reversible:</strong> Submissions are reversible.</li>
             <li>
@@ -79,8 +79,8 @@
       <div class="checklist-item">
         <input type="checkbox" id="labels-or-instructions" />
         <label for="labels-or-instructions"
-          ><strong>3.3.2 Labels or Instructions:</strong> Labels or instructions
-          are provided when content requires user input.</label
+          ><strong>3.3.2 Labels or Instructions (Level A):</strong> Labels or
+          instructions are provided when content requires user input.</label
         ><br />
         <div class="sc-description">
           This means that forms and other input fields should have clear labels
@@ -110,10 +110,10 @@
       <div class="checklist-item">
         <input type="checkbox" id="error-suggestion" />
         <label for="error-suggestion"
-          ><strong>3.3.3 Error Suggestion:</strong> If an input error is
-          automatically detected and suggestions for correction are known, then
-          the suggestions are provided to the user, unless it would jeopardize
-          the security or purpose of the content.</label
+          ><strong>3.3.3 Error Suggestion (Level AA):</strong> If an input error
+          is automatically detected and suggestions for correction are known,
+          then the suggestions are provided to the user, unless it would
+          jeopardize the security or purpose of the content.</label
         ><br />
         <div class="sc-description">
           This means that if the website finds a mistake in your input, it
@@ -137,11 +137,14 @@
       <div class="checklist-item">
         <input type="checkbox" id="error-prevention-legal-financial" />
         <label for="error-prevention-legal-financial"
-          ><strong>3.3.4 Error Prevention (Legal, Financial, Data):</strong> For
-          Web pages that require the user to submit information that may have
-          legal commitments or financial transactions for the user, that modify
-          or delete user-controllable data in data storage systems, or that
-          submit user test responses, at least one of the following is true:
+          ><strong
+            >3.3.4 Error Prevention (Legal, Financial, Data) (Level AA):</strong
+          >
+          For Web pages that require the user to submit information that may
+          have legal commitments or financial transactions for the user, that
+          modify or delete user-controllable data in data storage systems, or
+          that submit user test responses, at least one of the following is
+          true:
           <ul>
             <li><strong>Reversible:</strong> Submissions are reversible.</li>
             <li>
@@ -180,6 +183,7 @@
           placeholder="Notes:"
         ></textarea>
       </div>
+      <!-- 3.3.5 AAA 
       <div class="checklist-item">
         <input type="checkbox" id="help" />
         <label for="help"
@@ -208,6 +212,8 @@
         </div>
         <textarea id="notes-help" placeholder="Notes:"></textarea>
       </div>
+      -->
+      <!-- 3.3.6 AAA 
       <div class="checklist-item">
         <input type="checkbox" id="error-prevention-test" />
         <label for="error-prevention-test"
@@ -255,6 +261,73 @@
           placeholder="Notes:"
         ></textarea>
       </div>
+      -->
+
+      <div class="checklist-item">
+        <input type="checkbox" id="redundant-entry" />
+        <label for="redundant-entry"
+          ><strong>3.3.7 Redundant Entry (Level A):</strong> Information
+          previously entered by or provided to the user that is required to be
+          entered again in the same process is either: auto-populated, or
+          available for the user to select.</label
+        ><br />
+        <div class="sc-description">This means ...</div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li><strong>This:</strong> Are there ?</li>
+            <li><strong>That:</strong> Is the ?</li>
+            <li>
+              <strong>Accessibility:</strong> Is the help information itself
+              accessible (e.g., easy to read, keyboard accessible)?
+            </li>
+          </ul>
+        </div>
+        <textarea id="notes-redundant-entry" placeholder="Notes:"></textarea>
+      </div>
+
+      <div class="checklist-item">
+        <input type="checkbox" id="accessible-authentication" />
+        <label for="accessible-authentication"
+          ><strong
+            >3.3.8 Accessible Authentication (Minimum) (Level AA):
+          </strong>
+          A cognitive function test (such as remembering a password or solving a
+          puzzle) is not required for any step in an authentication process
+          unless that step provides at least one of the following:
+          <ul>
+            <li>
+              <strong>Alternative:</strong> Another authentication method that
+              does not rely on a cognitive function test.
+            </li>
+            <li>
+              <strong>Mechanism:</strong> A mechanism is available to assist the
+              user in completing the cognitive function test.
+            </li>
+            <li>
+              <strong>Object Recognition:</strong> The cognitive function test
+              is to recognize objects.
+            </li>
+            <li>
+              <strong>Personal Content:</strong> The cognitive function test is
+              to identify non-text content the user provided to the website.
+            </li>
+          </ul> </label
+        ><br />
+        <div class="sc-description">This is stuff</div>
+        <div class="check-details">
+          <strong>Check for:</strong>
+          <ul>
+            <li><strong>Online stuff:</strong> Are there a?</li>
+            <li><strong>Error:</strong> Are there ?</li>
+            <li><strong>Error:</strong> Can you ?</li>
+          </ul>
+        </div>
+        <textarea
+          id="notes-accessible-authentication"
+          placeholder="Notes:"
+        ></textarea>
+      </div>
     </div>
 
     <script>
@@ -279,21 +352,21 @@
 
       function getChecklistData() {
         const notes = {
-          "error-prevention-all": {
+          "1 - Error Identification - A": {
             notes: document.getElementById("notes-error-prevention-all").value,
             applicable: document.getElementById("error-prevention-all").checked,
           },
-          "labels-or-instructions": {
+          "2 - Labels or Instructions - A": {
             notes: document.getElementById("notes-labels-or-instructions")
               .value,
             applicable: document.getElementById("labels-or-instructions")
               .checked,
           },
-          "error-suggestion": {
+          "3 - Error Suggestion - AA": {
             notes: document.getElementById("notes-error-suggestion").value,
             applicable: document.getElementById("error-suggestion").checked,
           },
-          "error-prevention-legal-financial": {
+          "4 - Error Prevention (Legal, Financial, Data) - AA": {
             notes: document.getElementById(
               "notes-error-prevention-legal-financial"
             ).value,
@@ -301,13 +374,14 @@
               "error-prevention-legal-financial"
             ).checked,
           },
-          help: {
-            notes: document.getElementById("notes-help").value,
-            applicable: document.getElementById("help").checked,
+          "7 - Redundant Entry - A": {
+            notes: document.getElementById("notes-redundant-entry").value,
+            applicable: document.getElementById("redundant-entry").checked,
           },
-          "error-prevention-test": {
-            notes: document.getElementById("notes-error-prevention-test").value,
-            applicable: document.getElementById("error-prevention-test")
+          "8 - Accessible Authentication (Minimum) - AA": {
+            notes: document.getElementById("notes-accessible-authentication")
+              .value,
+            applicable: document.getElementById("accessible-authentication")
               .checked,
           },
           // ... (add other checklist items with their notes and applicable status)

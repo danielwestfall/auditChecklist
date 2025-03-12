@@ -30,7 +30,7 @@
         <input type="checkbox" id="use-of-color" />
         <label for="use-of-color"
           ><strong>1.4.1 Use of Color:</strong> Don't use color alone to convey
-          information.</label
+          information. (Level A)</label
         ><br />
         <div class="sc-description">
           This means that if you're using color to show something important, you
@@ -62,7 +62,7 @@
         <input type="checkbox" id="audio-control" />
         <label for="audio-control"
           ><strong>1.4.2 Audio Control:</strong> Make sure users can control any
-          background audio.</label
+          background audio. (Level A)</label
         ><br />
         <div class="sc-description">
           If your website has background music or sounds, people should be able
@@ -90,7 +90,7 @@
         <input type="checkbox" id="contrast-minimum" />
         <label for="contrast-minimum"
           ><strong>1.4.3 Contrast (Minimum):</strong> Make sure text has enough
-          contrast with its background.</label
+          contrast with its background. (Level AA)</label
         ><br />
         <div class="sc-description">
           This means the color of the text and the background should be
@@ -119,7 +119,7 @@
         <input type="checkbox" id="resize-text-aa" />
         <label for="resize-text-aa"
           ><strong>1.4.4 Resize text (AA):</strong> Make sure text can be made
-          bigger without losing information.</label
+          bigger without losing information. (Level AA)</label
         ><br />
         <div class="sc-description">
           People should be able to make the text bigger in their browser without
@@ -144,7 +144,7 @@
         <input type="checkbox" id="images-of-text-aa" />
         <label for="images-of-text-aa"
           ><strong>1.4.5 Images of Text (AA):</strong> Use real text instead of
-          images of text when possible.</label
+          images of text when possible. (Level AA)</label
         ><br />
         <div class="sc-description">
           Images of text can be harder to read for people with low vision or who
@@ -166,10 +166,10 @@
         <textarea id="notes-images-of-text-aa" placeholder="Notes:"></textarea>
       </div>
       <div class="checklist-item">
-        <input type="checkbox" id="line-height" />
-        <label for="line-height"
+        <input type="checkbox" id="reflow" />
+        <label for="reflow"
           ><strong>1.4.10 Reflow (AA):</strong> Content should be readable
-          without horizontal scrolling.</label
+          without horizontal scrolling. (Level AA)</label
         ><br />
         <div class="sc-description">
           When people make the text size bigger, they shouldn't have to scroll
@@ -185,13 +185,13 @@
             </li>
           </ul>
         </div>
-        <textarea id="notes-line-height" placeholder="Notes:"></textarea>
+        <textarea id="notes-reflow" placeholder="Notes:"></textarea>
       </div>
       <div class="checklist-item">
         <input type="checkbox" id="non-text-contrast" />
         <label for="non-text-contrast"
           ><strong>1.4.11 Non-text Contrast:</strong> Make sure visual elements
-          have enough contrast.</label
+          have enough contrast. (Level AA)</label
         ><br />
         <div class="sc-description">
           This means things like buttons, icons, and graphics should have enough
@@ -219,8 +219,8 @@
       <div class="checklist-item">
         <input type="checkbox" id="text-spacing" />
         <label for="text-spacing"
-          ><strong>1.4.12 Text Spacing:</strong> Make sure text is
-          well-spaced.</label
+          ><strong>1.4.12 Text Spacing:</strong> Make sure text is well-spaced.
+          (Level AA)</label
         ><br />
         <div class="sc-description">
           This means there should be enough space between letters, words, and
@@ -245,7 +245,8 @@
         <input type="checkbox" id="content-on-hover-or-focus" />
         <label for="content-on-hover-or-focus"
           ><strong>1.4.13 Content on Hover or Focus:</strong> Make sure extra
-          content that appears when you hover or focus is accessible.</label
+          content that appears when you hover or focus is accessible. (Level
+          AA)</label
         ><br />
         <div class="sc-description">
           If something pops up when you hover over it with your mouse or tab to
@@ -295,39 +296,39 @@
       });
       function getChecklistData() {
         const notes = {
-          "use-of-color": {
+          "1 - Use of Color - A": {
             notes: document.getElementById("notes-use-of-color").value,
             applicable: document.getElementById("use-of-color").checked,
           },
-          "audio-control": {
+          "2 - Audio Control - A": {
             notes: document.getElementById("notes-audio-control").value,
             applicable: document.getElementById("audio-control").checked,
           },
-          "contrast-minimum": {
+          "3 - Contrast (Minimum) - AA": {
             notes: document.getElementById("notes-contrast-minimum").value,
             applicable: document.getElementById("contrast-minimum").checked,
           },
-          "resize-text-aa": {
+          "4 - Resize Text - AA": {
             notes: document.getElementById("notes-resize-text-aa").value,
             applicable: document.getElementById("resize-text-aa").checked,
           },
-          "images-of-text-aa": {
+          "5 - Images of Text - AA": {
             notes: document.getElementById("notes-images-of-text-aa").value,
             applicable: document.getElementById("images-of-text-aa").checked,
           },
-          "line-height": {
-            notes: document.getElementById("notes-line-height").value,
-            applicable: document.getElementById("line-height").checked,
+          "10 - Reflow - AA": {
+            notes: document.getElementById("notes-reflow").value,
+            applicable: document.getElementById("reflow").checked,
           },
-          "non-text-contrast": {
+          "11 - Non-text Contrast - AA": {
             notes: document.getElementById("notes-non-text-contrast").value,
             applicable: document.getElementById("non-text-contrast").checked,
           },
-          "text-spacing": {
+          "12 - Text Spacing - AA": {
             notes: document.getElementById("notes-text-spacing").value,
             applicable: document.getElementById("text-spacing").checked,
           },
-          "content-on-hover-or-focus": {
+          "13 - Content on Hover or Focus - AA": {
             notes: document.getElementById("notes-content-on-hover-or-focus")
               .value,
             applicable: document.getElementById("content-on-hover-or-focus")

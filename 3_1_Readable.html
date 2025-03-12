@@ -28,7 +28,7 @@
   <div class="checklist">
     <div class="checklist-item">
       <input type="checkbox" id="language">
-      <label for="language"><strong>3.1.1 Language of Page:</strong> The default human language of each Web page can be programmatically determined.</label><br>
+      <label for="language"><strong>3.1.1 Language of Page (Level A):</strong> The default human language of each Web page can be programmatically determined.</label><br>
       <div class="sc-description">
         This means that the website should tell browsers and assistive technologies what language the content is written in (e.g., English, Spanish, French). This helps screen readers pronounce words correctly and use the right dictionary.
       </div>
@@ -41,9 +41,10 @@
       </div>
       <textarea id="notes-language" placeholder="Notes:"></textarea>
     </div>
+
     <div class="checklist-item">
       <input type="checkbox" id="language-of-parts">
-      <label for="language-of-parts"><strong>3.1.2 Language of Parts:</strong> The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.</label><br>
+      <label for="language-of-parts"><strong>3.1.2 Language of Parts (Level AA):</strong> The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.</label><br>
       <div class="sc-description">
         This means that if you use different languages on the same page, you should label each part with its language.
       </div>
@@ -56,6 +57,7 @@
       </div>
       <textarea id="notes-language-of-parts" placeholder="Notes:"></textarea>
     </div>
+<!--
     <div class="checklist-item">
       <input type="checkbox" id="unusual-words">
       <label for="unusual-words"><strong>3.1.3 Unusual Words:</strong>  A mechanism is available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon.</label><br>
@@ -117,6 +119,8 @@
       </div>
       <textarea id="notes-pronunciation" placeholder="Notes:"></textarea>
     </div>
+-->
+
   </div>
  
   <script>
@@ -143,14 +147,14 @@ window.addEventListener('load', () => {
 
     function getChecklistData() {
   const notes = {
-    "language": {
+    "1 - Language of Page - A": {
       "notes": document.getElementById("notes-language").value,
       "applicable": document.getElementById("language").checked
     },
-    "language-of-parts": {
+    "2 - Language of Parts - AA": {
       "notes": document.getElementById("notes-language-of-parts").value,
       "applicable": document.getElementById("language-of-parts").checked
-    },
+    },/*
     "unusual-words": {
       "notes": document.getElementById("notes-unusual-words").value,
       "applicable": document.getElementById("unusual-words").checked
@@ -166,7 +170,7 @@ window.addEventListener('load', () => {
     "pronunciation": {
       "notes": document.getElementById("notes-pronunciation").value,
       "applicable": document.getElementById("pronunciation").checked
-    },
+    },*/
 
   };
   return JSON.stringify(notes);

@@ -220,14 +220,14 @@
         <textarea id="notes-focus-visible" placeholder="Notes:"></textarea>
       </div>
       <div class="checklist-item">
-        <input type="checkbox" id="location" />
-        <label for="location"
-          ><strong>2.4.11 Location:</strong> Information about the user's
-          location within a set of Web pages is available.</label
+        <input type="checkbox" id="focus-not-obscured" />
+        <label for="focus-not-obscured"
+          ><strong>2.4.11 Focus Not Obscured (Minimum) (Level AA):</strong>
+          Explain.</label
         ><br />
         <div class="sc-description">
-          This means that the website should provide a way for you to know where
-          you are within the site's structure.
+          When a user interface component receives keyboard focus, the component
+          is not entirely hidden due to author-created content.
         </div>
         <div class="check-details">
           <strong>Check for:</strong>
@@ -246,32 +246,7 @@
             </li>
           </ul>
         </div>
-        <textarea id="notes-location" placeholder="Notes:"></textarea>
-      </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="section-headings" />
-        <label for="section-headings"
-          ><strong>2.4.12 Section Headings:</strong> A hierarchy of section
-          headings is used to organize the content.</label
-        ><br />
-        <div class="sc-description">
-          This means using different levels of headings (like H1, H2, H3) to
-          structure the content and make it easier to understand.
-        </div>
-        <div class="check-details">
-          <strong>Check for:</strong>
-          <ul>
-            <li>
-              <strong>Heading hierarchy:</strong> Are headings used in a logical
-              order (H1, then H2, then H3, etc.)?
-            </li>
-            <li>
-              <strong>Screen reader test:</strong> Does a screen reader
-              correctly identify the heading levels?
-            </li>
-          </ul>
-        </div>
-        <textarea id="notes-section-headings" placeholder="Notes:"></textarea>
+        <textarea id="notes-focus-not-obscured" placeholder="Notes:"></textarea>
       </div>
     </div>
 
@@ -297,43 +272,39 @@
 
       function getChecklistData() {
         const notes = {
-          "bypass-blocks": {
+          "1 - Bypass Blocks - A": {
             notes: document.getElementById("notes-bypass-blocks").value,
             applicable: document.getElementById("bypass-blocks").checked,
           },
-          "page-titled": {
+          "2 - Page Titled - A": {
             notes: document.getElementById("notes-page-titled").value,
             applicable: document.getElementById("page-titled").checked,
           },
-          "focus-order": {
+          "3 - Focus Order - A": {
             notes: document.getElementById("notes-focus-order").value,
             applicable: document.getElementById("focus-order").checked,
           },
-          "link-purpose-in-context": {
+          "4 - Link Purpose (In Context) - A": {
             notes: document.getElementById("notes-link-purpose-in-context")
               .value,
             applicable: document.getElementById("link-purpose-in-context")
               .checked,
           },
-          "multiple-ways": {
+          "5 - Multiple Ways - AA": {
             notes: document.getElementById("notes-multiple-ways").value,
             applicable: document.getElementById("multiple-ways").checked,
           },
-          "headings-and-labels": {
+          "6 - Headings and Labels - AA": {
             notes: document.getElementById("notes-headings-and-labels").value,
             applicable: document.getElementById("headings-and-labels").checked,
           },
-          "focus-visible": {
+          "7 - Focus Visible - AA": {
             notes: document.getElementById("notes-focus-visible").value,
             applicable: document.getElementById("focus-visible").checked,
           },
-          location: {
-            notes: document.getElementById("notes-location").value,
-            applicable: document.getElementById("location").checked,
-          },
-          "section-headings": {
-            notes: document.getElementById("notes-section-headings").value,
-            applicable: document.getElementById("section-headings").checked,
+          "11 - Focus Not Obscured (Minimum) - AA": {
+            notes: document.getElementById("notes-focus-not-obscured").value,
+            applicable: document.getElementById("focus-not-obscured").checked,
           },
           // ... (add other checklist items with their notes and applicable status)
         };

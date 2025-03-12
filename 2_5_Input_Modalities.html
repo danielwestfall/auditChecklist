@@ -193,29 +193,12 @@
         <textarea id="notes-motion-actuation" placeholder="Notes:"></textarea>
       </div>
       <div class="checklist-item">
-        <input type="checkbox" id="target-size" />
-        <label for="target-size"
-          ><strong>2.5.5 Target Size:</strong> The size of the target for
-          pointer inputs is at least 44 by 44 CSS pixels except when:
-          <ul>
-            <li>
-              <strong>Equivalent:</strong> The target is available through an
-              equivalent link or control on the same page that is at least 44 by
-              44 CSS pixels; or
-            </li>
-            <li>
-              <strong>Inline:</strong> The target is in a sentence or block of
-              text; or
-            </li>
-            <li>
-              <strong>User Agent Control:</strong> The size of the target is
-              determined by the user agent and is not modified by the author; or
-            </li>
-            <li>
-              <strong>Essential:</strong> A particular presentation of the
-              target is essential to the information being conveyed.
-            </li>
-          </ul> </label
+        <input type="checkbox" id="dragging-movements" />
+        <label for="dragging-movements"
+          ><strong>2.5.7 Dragging Movements</strong> All functionality that uses
+          a dragging movement for operation can be achieved by a single pointer
+          without dragging, unless dragging is essential or the functionality is
+          determined by the user agent and not modified by the author. </label
         ><br />
         <div class="sc-description">
           This means that clickable areas should be big enough for people to
@@ -235,20 +218,53 @@
             </li>
           </ul>
         </div>
-        <textarea id="notes-target-size" placeholder="Notes:"></textarea>
+        <textarea id="notes-dragging-movements" placeholder="Notes:"></textarea>
       </div>
       <div class="checklist-item">
-        <input type="checkbox" id="concurrent-input-mechanisms" />
-        <label for="concurrent-input-mechanisms"
-          ><strong>2.5.6 Concurrent Input Mechanisms:</strong> Web content does
-          not restrict use of input modalities available on a platform except
-          where the restriction is essential, required to ensure the security of
-          the content, or required to respect user settings.</label
+        <input type="checkbox" id="target-size" />
+        <label for="target-size"
+          ><strong>2.5.8 Target Size (Minimum):</strong> The size of the target
+          for pointer inputs is at least 24 by 24 CSS pixels, except when:
+          <ul>
+            <li>
+              <strong>Spacing:</strong> Undersized targets (those less than 24
+              by 24 CSS pixels) are positioned so that if a 24 CSS pixel
+              diameter circle is centered on the bounding box of each, the
+              circles do not intersect another target or the circle for another
+              undersized target;
+            </li>
+            <li>
+              <strong>Equivalent:</strong> The function can be achieved through
+              a different control on the same page that meets this criterion;
+            </li>
+            <li>
+              <strong>Inline:</strong> The target is in a sentence or its size
+              is otherwise constrained by the line-height of non-target text;
+            </li>
+            <li>
+              <strong>User Agent Control:</strong> The size of the target is
+              determined by the user agent and is not modified by the author;
+            </li>
+            <li>
+              <strong>Essential:</strong> A particular presentation of the
+              target is essential or is legally required for the information
+              being conveyed
+            </li>
+          </ul></label
         ><br />
         <div class="sc-description">
-          This means that the website shouldn't stop you from using different
-          input methods (like a mouse, keyboard, or touchscreen) at the same
-          time, unless it's necessary for security or user preferences.
+          The size of the target for pointer inputs is at least 24 by 24 CSS
+          pixels, except when: Spacing Undersized targets (those less than 24 by
+          24 CSS pixels) are positioned so that if a 24 CSS pixel diameter
+          circle is centered on the bounding box of each, the circles do not
+          intersect another target or the circle for another undersized target;
+          Equivalent The function can be achieved through a different control on
+          the same page that meets this criterion; Inline The target is in a
+          sentence or its size is otherwise constrained by the line-height of
+          non-target text; User Agent Control The size of the target is
+          determined by the user agent and is not modified by the author;
+          Essential A particular presentation of the target is essential or is
+          legally required for the information being conveyed.
         </div>
         <div class="check-details">
           <strong>Check for:</strong>
@@ -263,10 +279,7 @@
             </li>
           </ul>
         </div>
-        <textarea
-          id="notes-concurrent-input-mechanisms"
-          placeholder="Notes:"
-        ></textarea>
+        <textarea id="notes-target-size" placeholder="Notes:"></textarea>
       </div>
     </div>
 
@@ -292,31 +305,29 @@
 
       function getChecklistData() {
         const notes = {
-          "pointer-gestures": {
+          "1 - Pointer Gestures - A": {
             notes: document.getElementById("notes-pointer-gestures").value,
             applicable: document.getElementById("pointer-gestures").checked,
           },
-          "pointer-cancellation": {
+          "2 - Pointer Cancellation - A": {
             notes: document.getElementById("notes-pointer-cancellation").value,
             applicable: document.getElementById("pointer-cancellation").checked,
           },
-          "label-in-name": {
+          "3 - Label in Name - A": {
             notes: document.getElementById("notes-label-in-name").value,
             applicable: document.getElementById("label-in-name").checked,
           },
-          "motion-actuation": {
+          "4 - Motion Actuation - A": {
             notes: document.getElementById("notes-motion-actuation").value,
             applicable: document.getElementById("motion-actuation").checked,
           },
-          "target-size": {
+          "7 - Dragging Movements - AA": {
+            notes: document.getElementById("notes-dragging-movements").value,
+            applicable: document.getElementById("dragging-movements").checked,
+          },
+          "8 - Target Size (Minimum) - AA": {
             notes: document.getElementById("notes-target-size").value,
             applicable: document.getElementById("target-size").checked,
-          },
-          "concurrent-input-mechanisms": {
-            notes: document.getElementById("notes-concurrent-input-mechanisms")
-              .value,
-            applicable: document.getElementById("concurrent-input-mechanisms")
-              .checked,
           },
           // ... (add other checklist items with their notes and applicable status)
         };
