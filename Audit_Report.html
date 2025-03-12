@@ -9,12 +9,24 @@
 
       header {
         padding: 10px;
+        padding-top: 0px;
+        margin-top: 0px;
         border-bottom: 1px solid #ddd;
         display: flex; /* Use flexbox for the header */
         flex-wrap: wrap; /* Allow items to wrap */
-        gap: 10px; /* Add some space between items */
+        gap: 20px; /* Add some space between items */
         align-items: flex-end;
         font-weight: 600;
+      }
+
+      header h1 {
+        flex-basis: 100%;
+        margin: 0;
+        font-size: 2em;
+        text-align: left;
+        white-space: nowrap; /* Prevent wrapping */
+        overflow: hidden; /* Hide overflowing text */
+        text-overflow: ellipsis; /* Add ellipsis (...) for long text */
       }
 
       header > div {
@@ -104,7 +116,7 @@
   <body>
     <header>
       <div>
-        <h1>WCAG 2.2 Checklist</h1>
+        <h1>WCAG 2.2 AA Checklist</h1>
       </div>
       <div>
         <label for="page-name">Page Name:</label>
