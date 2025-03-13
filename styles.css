@@ -1,0 +1,162 @@
+body {
+  font-family: sans-serif;
+  margin-top: 2vh; /* Remove default body margins */
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+header {
+  padding: 10px;
+  padding-top: 0px;
+  margin-top: 0px;
+  border-bottom: 1px solid #ddd;
+  display: flex; /* Use flexbox for the header */
+  flex-wrap: wrap; /* Allow items to wrap */
+  gap: 20px; /* Add some space between items */
+  align-items: flex-end;
+  font-weight: 600;
+}
+
+header h1 {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 2em;
+  text-align: left;
+  white-space: nowrap; /* Prevent wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis (...) for long text */
+}
+
+header > div {
+  flex: 1; /* Allow input field divs to grow and take equal space */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  /* Adjust the breakpoint as needed */
+  header > div {
+    flex-basis: 100%; /* Make input field divs take full width on smaller screens */
+  }
+}
+
+main {
+  display: flex; /* Enable flexbox for the main content area */
+}
+
+.sidebar {
+  width: 250px; /* Adjust sidebar width as needed */
+  padding: 10px;
+  border-right: 1px solid #ddd; /* Add a separator */
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh; /* Limit the height to the viewport height */
+  overflow-y: auto; /* Add vertical scroll if content exceeds height */
+  width: 100%; /* Make controls take full width */
+}
+
+.tab-content {
+  display: none;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+iframe {
+  width: 100%; /* Make iframe take full width */
+  height: 70vh; /* Adjust height as needed */
+  border: none;
+}
+
+.guideline-control {
+  display: flex;
+  align-items: center; /* Align left */
+  justify-content: center; /* Center horizontally */
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+
+.guideline-control label {
+  margin-right: 10px;
+}
+
+.guideline-control > div {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.guideline-control > div:first-child {
+  flex: 1;
+}
+
+.accordion-content {
+  display: none; /* Initially hide accordion content */
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+}
+
+.accordion-trigger {
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.guideline-control {
+  display: flex;
+  align-items: center;
+}
+
+.guideline-control > div:first-child {
+  flex: 1; /* Make the label take up most of the space */
+}
+label {
+  font-weight: 700;
+}
+
+.checklist {
+  font-family: sans-serif;
+}
+.checklist-item {
+  margin-bottom: 25px;
+}
+textarea {
+  width: 95%;
+  height: 100px;
+}
+.sc-description {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #555;
+}
+.check-details {
+  margin-left: 20px;
+}
